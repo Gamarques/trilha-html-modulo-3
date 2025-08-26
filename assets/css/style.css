@@ -1,38 +1,101 @@
-body, html {
+body {
+    font-family: "Georgia", "Times New Roman", serif;
+    background-color: #ffffff;
+    color: #202122;
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
 }
-ul { list-style: none; padding-left: 5px; }
-a { color:blue; text-decoration: none;}
-.bar {
-    background-color: #f9f9fb;
-    padding:15px;
-    border-top: solid 1px #cdcdcd;
-    border-bottom: solid 1px #cdcdcd;
+
+h1, h2 {
+    font-family: "Linux Libertine", "Georgia", serif;
+    margin-top: 0;
 }
-.content {
-    max-width: 1440px;
-    margin: auto;
-    grid-gap: 3rem;
-    display: grid;
-    gap: 3rem;
-    grid-template-areas: "sidebar main anchors";
-    grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
-    padding-left: 1rem;
-    padding-right: 1rem;
+
+a {
+    color: #0645ad;
+    text-decoration: none;
 }
-.footer {
-    min-height: 100px;
-    border-top: solid 1px #cdcdcd;
+a:hover {
+    text-decoration: underline;
 }
-.anchors {
-    border-left: solid 1px #cdcdcd;
-    padding-left: 15px;
-}
-.sidebar {
-    border-right: solid 1px #cdcdcd;
-}
-figure {
+
+.logo {
     text-align: center;
+    padding: 15px;
+}
+
+.bar {
+    background-color: #ccc;
+    height: 1px;
+    width: 100%;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.sidebar {
+    background-color: #f8f9fa;
+    border: 1px solid #a2a9b1;
+    padding: 10px;
+    font-size: 0.9em;
+}
+.sidebar h2 {
+    font-size: 1.1em;
+    border-bottom: 1px solid #a2a9b1;
+    margin-bottom: 10px;
+}
+
+.main {
+    padding: 0 15px;
+}
+.main h1 {
+    border-bottom: 1px solid #a2a9b1;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.anchors {
+    background-color: #f8f9fa;
+    border: 1px solid #a2a9b1;
+    padding: 10px;
+    font-size: 0.9em;
+}
+.anchors h2 {
+    font-size: 1.1em;
+    border-bottom: 1px solid #a2a9b1;
+    margin-bottom: 10px;
+}
+
+.footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #a2a9b1;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8em;
+    margin-top: 20px;
+}
+
+blockquote {
+    border-left: 3px solid #a2a9b1;
+    margin: 15px 0;
+    padding-left: 10px;
+    font-style: italic;
+    background-color: #fdfdfd;
+}
+
+del {
+    color: #d33;
+    text-decoration: line-through;
+}
+
+abbr {
+    border-bottom: 1px dotted #000;
+    cursor: help;
 }
